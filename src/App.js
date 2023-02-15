@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import TodoDone from './components/TodoDone';
+import PartsBox from './components/PartsBox';
 
 function App() {
   let jsonGetted = localStorage.getItem("jsonString")
@@ -14,8 +15,7 @@ function App() {
       return ([])
     }
   })
-  const [toDo,setTodo] = useState('')
-  
+  const [toDo,setTodo] = useState('') 
   return (
     <div className="app">
       <div className="mainHeading">
@@ -74,6 +74,9 @@ function App() {
           let jsonString = JSON.stringify(toDos)
           localStorage.setItem("jsonString", jsonString)
         }}>Save</button>
+      </div>
+      <div>
+        {<PartsBox {...toDos}/>}
       </div>
     </div>
   );

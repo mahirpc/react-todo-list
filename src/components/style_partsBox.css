@@ -1,0 +1,21 @@
+.eachParts{
+    width: 80%;
+    background-color: aliceblue;
+    height: 20px;
+    padding: 2px;
+    margin: 2px;
+  }
+  .eachPartsTop{
+    width: 80%;
+    background-color: aliceblue;
+    height: 20px;
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+  .partsContainer{
+    height: 50%;
+    width: 60%;
+    background-color: rgb(71, 141, 98);
+    padding: 20px;
+    margin-top: 10px;
+  }
